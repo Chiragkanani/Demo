@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 
 // const logger = require("./logger");
 
-// trial for f6
+
 
 app.use(expresslayout);
 app.set("layout", "./layouts/layout");
