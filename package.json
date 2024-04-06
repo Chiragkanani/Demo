@@ -20,6 +20,8 @@
     "generate-unique-id": "^2.0.3",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.3",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
     "winston": "^3.13.0"
   }
 }
