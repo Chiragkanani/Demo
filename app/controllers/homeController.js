@@ -1,7 +1,7 @@
 const homeController = ()=>{
     return{
         getHome(req,res){
-            res.send("welcome to india")
+            res.send(req.cookies)
         }
     }
 }

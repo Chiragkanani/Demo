@@ -4,11 +4,11 @@ require("dotenv").config();
 const web = require("./Routes/web");
 const expresslayout = require("express-ejs-layouts");
 const cookieParser = require("cookie-parser");
-
+const passport = require("passport");
 // const logger = require("./logger");
 
 
-
+app.use(passport.initialize())
 app.use(expresslayout);
 app.set("layout", "./layouts/layout");
 app.use(cookieParser());
