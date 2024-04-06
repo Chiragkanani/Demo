@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const auth = (req, res, next) => {
     try {
+      
         if (req.cookies?.token) {
             try {
                 let decoded = jwt.verify(req.cookies.token, process.env.SECRET_KEY);
