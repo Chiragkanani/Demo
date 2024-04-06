@@ -5,16 +5,20 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon"
+    "start": "nodemon"
   },
   "author": "chirag kanani",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.18.0",
+    "generate-unique-id": "^2.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.3",
     "winston": "^3.13.0"
   }
 }
