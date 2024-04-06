@@ -3,17 +3,15 @@ const app = express();
 require("dotenv").config();
 const web = require("./Routes/web");
 const expresslayout = require("express-ejs-layouts");
-const cookieParser = require('cookie-parser')
-
-
+const cookieParser = require("cookie-parser");
 
 // const logger = require("./logger");
 
-
+// trial for f6
 
 app.use(expresslayout);
 app.set("layout", "./layouts/layout");
-app.use(cookieParser())
+app.use(cookieParser());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.json());
