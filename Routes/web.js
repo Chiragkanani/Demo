@@ -11,7 +11,8 @@ const RegisterLogin = require("../app/middlewares/validation/registerLogin");
 
 
 
-web.get("/", passport.authenticate('jwt', { session: false }),homeController().getHome)
+// web.get("/", passport.authenticate('jwt', { session: false }),homeController().getHome)
+web.get("/",auth,homeController().getHome)
 web.get("/login",authController().getLoginForm);
 web.post("/login",authController().loginUser);
 web.get("/register",authController().getRegisterForm);
